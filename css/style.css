@@ -1,0 +1,145 @@
+/* --- ESTILOS GERAIS --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fcbcd7, hwb(330 71% 0%), #e2dee1);
+    color: #fd029dfa;
+    line-height: 1.6;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- TÍTULOS --- */
+.titulo-album {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.subtitulo-album {
+    color: #ff0099;
+    margin-bottom: 40px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- GRADE DE FOTOS --- */
+.album-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+/* --- MOLDURA DAS FOTOS --- */
+.foto-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    aspect-ratio: 4/3;
+    background-color: #2a2a2a;
+}
+
+/* --- AS IMAGENS --- */
+.foto-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(100%);
+    transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+/* --- LEGENDA (HOVER) --- */
+.legenda {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    opacity: 0;
+    transition: bottom 0.4s ease, opacity 0.4s ease;
+    pointer-events: none;
+    box-sizing: border-box;
+}
+
+/* --- ANIMAÇÕES DE MOUSE (HOVER) --- */
+.foto-box:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.08);
+}
+
+.foto-box:hover .legenda {
+    bottom: 0;
+    opacity: 1;
+}
+
+/* --- TOCADOR DE MÚSICA --- */
+.musica-fundo {
+    display: block;       
+    margin: 40px auto;    
+    max-width: 320px;     
+    width: 100%;          
+    background: #fabedf;   
+    border: 2px solid #ff0565; 
+    border-radius: 50px;   
+    padding: 4px;          
+    box-shadow: 0 6px 20px rgba(255, 7, 131, 0.7); 
+    transition: all 0.3s ease;
+}
+
+.musica-fundo:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 25px rgba(255, 7, 131, 0.99); 
+}
+
+/* --- CONTAINER PARA CENTRALIZAR O BOTÃO --- */
+.container-botao-voltar {
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+    width: 100%;               
+    margin-top: 20px;          
+    margin-bottom: 50px;       
+}
+
+/* --- ESTILO DO BOTÃO VOLTAR --- */
+.botao-voltar {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;                  
+    background: #f87dc5;        
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: 2px solid #ff0565;  
+    box-shadow: 0 4px 15px rgba(255, 7, 131, 0.4); 
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.botao-voltar:hover {
+    background: #ffffff;
+    color: #f87dc5;             
+    transform: scale(1.05);     
+    box-shadow: 0 6px 20px rgba(255, 7, 131, 0.8); 
+}
+
+

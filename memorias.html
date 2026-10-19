@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum de Fotos Offline</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    
+    <script src="js/script.js" defer></script>
+</head>
+
+
+<body>
+
+    <h1 class="titulo-album">Momentos Com Meus Amores</h1>
+    <div class="subtitulo-album "> Obrigado por cada momemto. Vocês não sabem o quanto melhoram meu dia.</div>
+
+    <div class="album-container">
+        
+        <div class="foto-box" onclick="abrirModal('img/foto1.jpeg', 'Minha Base')">
+            <img src="img/foto1.jpeg" alt="Foto1">
+            <div class="legenda">Mamãe</div>
+        </div>
+            
+        <div class="foto-box" onclick="abrirModal('img/foto2.jpeg', 'Dias de Sol')">
+            <img src="img/foto2.jpeg" alt="Foto2">
+            <div class="legenda">Momentos Felizes</div>
+        </div>
+            
+        <div class="foto-box" onclick="abrirModal('img/foto3.jpeg', 'Best')">
+            <img src="img/foto3.jpeg" alt="Foto3">
+            <div class="legenda">2026 Momentos</div>
+        </div>
+            
+        <div class="foto-box" onclick="abrirModal('img/foto4.jpeg', 'Meus bebezinho!')">
+            <img src="img/foto4.jpeg" alt="Foto4">
+            <div class="legenda">Irmãos</div>
+        </div>
+            
+        <div class="foto-box" onclick="abrirModal('img/foto5.jpeg', 'Te Amo Feio')">
+            <img src="img/foto5.jpeg" alt="Foto5">
+            <div class="legenda">Megamente</div>
+        </div>
+
+
+        <div class="foto-box" onclick="abrirModal('img/foto6.jpeg', 'Simplesmente Eu')">
+            <img src="img/foto6.jpeg" alt="Foto6">
+            <div class="legenda">Meu Jeito de Ser</div>
+        </div>
+
+
+        <div class="foto-box" onclick="abrirModal('img/foto7 (2).jpeg', 'Feijão com Farinha')">
+            <img src="img/foto7 (2).jpeg" alt="foto7">
+            <div class="legenda">Papai</div>
+        </div>
+
+
+        <div class="foto-box" onclick="abrirModal('img/foto9.jpeg', 'Minha Estrela Cadente')">
+            <img src="img/foto9.jpeg" alt="foto9">
+            <div class="legenda">Vovó Nezinha</div>
+        </div>
+
+
+        <div class="foto-box" onclick="abrirModal('img/foto10.jpeg', 'José e Ana')">
+            <img src="img/foto10.jpeg" alt="foto10">
+            <div class="legenda">Maninho</div>
+        </div>
+
+
+        <div class="foto-box" onclick="abrirModal('img/foto11.jpeg', 'Meus veinhos')">
+            <img src="img/foto11.jpeg" alt="foto11">
+            <div class="legenda">Vovô e a Vovó</div>
+        </div>
+
+
+        <div class="foto-box" onclick="abrirModal('img/foto12.jpeg', 'Tios dos gatos')">
+            <img src="img/foto12.jpeg" alt="Foto12">
+            <div class="legenda">Manga Rosa e Gui</div>
+        </div>
+
+
+        <div class="foto-box" onclick="abrirModal('img/foto13.jpeg', 'Tia mais cpmpanheira')">
+            <img src="img/foto13.jpeg" alt="foto13">
+            <div class="legenda">Juju e Gustavo</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto14.jpeg', 'Tios da zoeiras')">
+            <img src="img/foto14.jpeg" alt="foto14">
+            <div class="legenda">Tio Jé, Mona, e o Jordan</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto15.jpeg', 'Almoço de Domingo')">
+            <img src="img/foto15.jpeg" alt="foto15">
+            <div class="legenda">Frango Assado, Tia Nilda, e Primo Vitor</div>
+        </div>
+
+    </div> 
+    <audio controls autoplay loop class="musica-fundo">
+        <source src="audio/musica1.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <div class="container-botao-voltar">
+        <a href="portifólio.html" class="botao-voltar">
+            <i class="fa-solid fa-arrow-left"></i> Voltar
+        </a>
+    </div>
+    
+    
+
+    <div class="modal" id="meuModal">
+        <span class="btn-fechar" onclick="fecharModal()">&times;</span>
+        <img id="imagemModal" src="" alt="Foto em tela cheia">
+        <div class="legenda-modal" id="textoModal"></div>
+    </div>
+
+</body>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js">
+</script>
+<script>
+  new window.VLibras.Widget(
+    'https://vlibras.gov.br/app',
+    'https://vlibras.gov.br/config/default_logo.json',
+    'random',
+    'R'
+  );
+</script>
+
+</html>

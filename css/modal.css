@@ -1,0 +1,52 @@
+ /* --- TELA CHEIA (MODAL) --- */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.95);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal.ativo {
+            display: flex;
+        }
+
+        .modal img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 6px;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+            animation: abrirSuave 0.35s ease;
+        }
+
+        .legenda-modal {
+            color: #fff;
+            margin-top: 20px;
+            font-size: 1.6rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-align: center;
+            animation: aparecerSuave 0.5s ease;
+        }
+
+        .btn-fechar {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: #fff;
+            font-size: 50px;
+            font-weight: 200;
+            cursor: pointer;
+            transition: color 0.2s;
+            user-select: none;
+        }
+
+        .btn-fechar:hover {
+            color: #fcf2f2;
+        }

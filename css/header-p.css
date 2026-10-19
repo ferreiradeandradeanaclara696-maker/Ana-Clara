@@ -1,0 +1,272 @@
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.header-portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.header-portfolio h1 {
+  color: #ffffff;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.nav-container {
+  display: flex;
+  gap: 25px;
+  padding: 10px 30px;
+  background: #fabedf;
+  backdrop-filter: blur(10px);
+  border: 1px solid #ff0565;
+  border-radius: 50px;
+  box-shadow: 0 6px 20px rgba(255, 7, 131, 0.993);
+}
+
+.nav-container a {
+  color: hsl(330, 20%, 94%);
+  font-size: 1.2rem;
+  transition: all 0.3s ease; /* Corrigido de a11 para all */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50px;
+}
+
+/* NOVO: Efeito hover na nav igual ao do contato */
+.nav-container a:hover {
+  color: #fd046c;
+  transform: scale(1.2);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 50px 0;
+  flex-wrap: wrap;
+}
+
+.hero-texto {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-texto h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero-texto h1 span {
+  color: #e7226e;
+}
+
+.hero-texto p {
+  font-size: 18px;
+  color: #f9fcff;
+  margin-bottom: 20px;
+}
+
+.botao {
+  display: inline-block;
+  background: #f87dc5;
+  color: #eff0f1;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  background: #ffffff;
+  color: #f87dc5; /* Adicionado para dar contraste no texto */
+  transform: scale(1.05);
+}
+
+.hero-foto {
+  flex: 1;
+  min-width: 260px;
+  text-align: center;
+}
+
+.hero-foto img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #ee52a8;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #f80878;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.sobre p,
+.contato p {
+  color: #e2e8f0;
+  font-size: 17px;
+}
+
+.card {
+  background: rgba(255, 111, 190, 0.95);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(160, 166, 201, 0.95); /* Removido o espaço do 20px */
+}
+
+.projetos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.projeto {
+  flex: 1 1 250px;
+  background: #ec66a9;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.projeto:hover {
+  transform: translateY(-5px);
+  background: #ee45a2;
+}
+
+.projeto h3 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.projeto p {
+  color: #cbd5e1;
+}
+
+/* Habilidades com a duplicação removida */
+.habilidades ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.habilidades li {
+  background: #f8409c;
+  color: #f3f5f8;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* REDES SOCIAIS */
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 15px;
+}
+
+.redes a {
+  font-size: 30px;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.redes a:hover {
+  color: #fd046c;
+  transform: scale(1.2);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #f50198;
+  margin-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Removido os asteriscos */
+}
+
+/* LIGHTBOX */
+#lightbox {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#lightbox img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+/* BOTÃO TOPO (Mesclado e sem erros de espaço) */
+#topo {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(255, 168, 202);
+  border-radius: 50%;
+  background: #ff0fa3;
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  display: none;
+  transition: all 0.3s ease;
+}
+
+#topo:hover {
+  background: #eeeeee;
+  color: #ff0fa3; /* Muda a cor do ícone para dar destaque */
+  transform: scale(1.1);
+}
